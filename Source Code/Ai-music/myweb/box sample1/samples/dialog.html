@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="../javascripts/prototype.js"> </script>
+	<script type="text/javascript" src="../javascripts/effects.js"> </script>
+	<script type="text/javascript" src="../javascripts/window.js"> </script>
+	<script type="text/javascript" src="../javascripts/debug.js"> </script>
+	<link href="../themes/default.css" rel="stylesheet" type="text/css"/>
+	<link href="../themes/alert.css" rel="stylesheet" type="text/css"/>
+	<link href="../themes/alphacube.css" rel="stylesheet" type="text/css"/>
+
+	<title>dialog</title>
+	
+</head>
+
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<a href="#" onclick="openConfirm()">open confirm dialog</a><br/>
+
+
+<script type="text/javascript">
+  function openConfirm() {
+    Dialog.confirm("Add your <b>HTML</b> message here<br/>Better than a classic javascript alert?", 
+                   {className: "alphacube", width:500 ,height:400,closable:true,url: "http://localhost:8080/Ai-music/myweb/member_message_leave.jsp"})
+  }  
+</script>
+
+</body>
+</html>

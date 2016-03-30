@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_session1" value="user_id" />
+	<infoitem key="UD_sessionCount" value="2" />
+	<infoitem key="UD_session2" value="user_password" />
+</info>

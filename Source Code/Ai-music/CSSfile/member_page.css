@@ -1,0 +1,592 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background:#FFFFFF;
+	background-image:url(../myweb/images/star_none.gif);
+	margin: 0; /* 比較好的做法是將 Body 元素的邊界與欄位間隔調整為零，以處理不同的瀏覽器預設值 */
+	padding: 0;
+	text-align: center; /* 這樣會讓容器在 IE 5* 瀏覽器內置中對齊。然後，文字會在 #container 選取器中設定為靠左對齊預設值 */
+	color: #000000;
+
+	
+}
+
+
+
+.oneColFixCtrHdr #container {
+	width: 980px;  /* 使用比完整 800px 少 20px 的寬度會允許使用瀏覽器邊框並且避免水平捲軸出現 */
+	background-image:url(../images/background.jpg);
+	margin: 0 auto; /* 自動邊界 (搭配寬度) 會讓頁面置中對齊 */
+	text-align: left; /* 這樣做會覆寫 Body 元素上的 text-align: center。 */
+	position: relative;
+	margin-top:45px;
+	
+		/*上圓角*/
+    -moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius:30px;
+	-moz-border-radius-topright: 30px;
+	-webkit-border-top-right-radius: 30px;
+	
+}
+.oneColFixCtrHdr #header {
+ /* 這個欄位間隔符合下面顯示的 Div 中，元素的靠左對齊。如果在 #header 中使用影像而非文字，您可能會想要移
+	除欄位間隔。 */
+	width: 980px;
+	height: auto; 
+	background: #FFFFFF;  
+	margin: 0px auto;
+    position: relative;	
+	-moz-border-radius-bottomleft: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+}
+.oneColFixCtrHdr #header h1 {
+	margin: 0; /* 將 #header Div 中最後一個元素的邊界調整為零可避免邊界收合 (Div 之間出現的空間，無法解釋)。如果 Div 的周圍具有邊框，這就不是必要動作，因為該項設定也會避免邊界收合 */
+	padding: 10px 0; /* 使用欄位間隔而非邊界便可讓元素遠離 Div 的邊緣 */
+}
+.oneColFixCtrHdr #mainContent {
+	padding: 0 20px; /* 請記住，欄位間隔就是 Div 方塊內部的空間，而邊界就是 Div 方塊外部的空間 */
+	background:#FFFFFF;
+	min-height:1200px;
+	-moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius:30px;
+	-moz-border-radius-topright: 30px;
+	-webkit-border-top-right-radius: 30px;
+		
+}
+.oneColFixCtrHdr #footer {
+	padding: 0 10px; /* 這個欄位間隔符合上面顯示的 Div 中，元素的靠左對齊。 */
+	background:#B3B3B3;
+	height:45;
+	clear:both;
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* 將頁尾中第一個元素的邊界調整為零可避免邊界收合的可能性 (Div 之間出現的空間) */
+	padding: 10px 0; /* 這個元素的欄位間隔將會建立空間，就如同邊界一樣，但是沒有邊界收合的問題 */
+	clear:both;
+}
+
+
+
+/*---------------文字樣式---------------*/
+
+.style1 {color:#B3B3B3}/*深灰色*/
+.style2 {color:#FFFFFF}/*白色*/
+.style3 {color:#666666}
+.style4 {color:#5F5F5F} /*灰色*/
+.style5 {color:#F6F6F6} /*個人頁面標題淺灰*/
+.style6 {color:#444444}
+
+.style7 {
+  color:#0600ff;
+  -moz-opacity: 0.7; 
+  opacity: 0.7; 
+
+}
+.style8 {color:#ff091a}
+.style10 {font-size: 30pt}
+
+.color1 {
+  color:#ff091a;
+  -moz-opacity: 0.7; 
+  opacity: 0.7; 
+}
+
+.style12 {font-size: xx-small}
+.style13 {font-size: 8pt;}
+.style14 {font-size: 10pt;
+		  font-variant:small-caps;
+		  }
+.style15 {font-size: 7pt;}		  
+.style17 {font-family: "微軟正黑體"; font-size: 20pt; font-weight: bold; }
+
+.font10 {/*小文字*/
+
+	font-size: 10pt;
+	line-height: 15pt;
+	letter-spacing: 0.2em;
+	text-indent: 0.2pt;}
+	
+
+
+ 
+
+/*-------------------header-------------------*/
+
+
+
+#logout {/*登出用div*/
+	position:absolute;
+	left:1078px;
+	top:8px;
+	width:35px;
+	height:20px;
+	z-index:1;
+}
+
+#my-manage {
+	position:absolute;
+	left:835px;
+	top:17px;
+	width:28px;
+	z-index:1;
+}
+
+#Menu{
+    width: 940px;  
+	position: relative;
+	
+	/*Menu外框灰線*/
+    border-width: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+		margin: 0 20px;
+	
+}
+
+.tablergray{/*Menu右邊實線*/
+    border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#CCCCCC; 
+}
+
+#showid{/*個人標籤*/
+	width: 940px;  /* 使用比完整 800px 少 20px 的寬度會允許使用瀏覽器邊框並且避免水平捲軸出現 */
+	padding-top:20px; 
+	position: relative;
+}
+
+
+/*-------------------左邊的大div-------------------*/
+#bigleft { 
+    width:240px;
+	height:auto;
+	z-index:1;
+    position:relative;
+	float:left;
+	margin-top:64px;
+}
+
+#aboutme-block{/*關於我的框框*/
+    margin:25px 0px 0px 0px;
+	max-width:240px;
+}
+
+#intro-block{/*簡介的框框*/
+    max-width:240px;
+	margin-bottom:40px;
+} 
+
+#aboutme-block-pic{
+    float:left;
+	margin:0px 5px 20px 0px;
+	border:1px solid #E5E5E5;
+}
+
+.clearblock{clear:both;}
+
+.detail-block{margin-bottom:5px;}
+
+.title{
+position:relative;
+padding:4px 0px 4px 8px;
+}
+
+.bar_left1{
+  position:absolute; 
+  z-index:1000; 
+  background-color:#0600ff; 
+  left: 0px; 
+  top: 19px; 
+  width:240px; 
+  height:8px;
+  -moz-opacity: 0.3; 
+  opacity: 0.3;
+ }
+
+.bar_left2{
+  position:absolute; 
+  z-index:1000; 
+  background-color:#ff091a; 
+  left: 0px; 
+  top: 19px; 
+  width:240px; 
+  height:8px; 
+  -moz-opacity: 0.3; 
+  opacity: 0.3; 
+}
+
+/*-------------------右邊的大div-------------------*/
+
+#bigright { /*右邊的大div*/	
+	width:662px;
+	height:auto;
+	z-index:1;
+	position:relative;
+	float:left;
+	margin-top:64px;
+	margin-left:38px;
+	margin-bottom:120px;
+	
+	
+}
+
+
+.song{ /*歌曲間隔用*/ 
+	border-bottom:#CCCCCC 1px dashed ; 
+    margin-bottom:10px;
+	clear:both;
+}
+
+.space{/*分類間隔用*/
+    margin-bottom:50px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.space1{/*分類間隔用*/
+    margin-bottom:50px;
+	/*border:1px solid #5F5F5F;*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#music-title{/*音樂分類title*/
+	height:30px;
+	z-index:1;
+	margin-bottom:10px;
+	background-color:#5F5F5F;
+	/*border-bottom:2px dashed  #666666;*/
+	padding-top:5px;
+	clear:both;
+	color:#FFFFFF;
+}
+
+
+.redline-title{
+     position:relative;
+     margin-bottom:10px;
+	/* background-color:#ff091a;*/
+	 color:#ff091a;
+	/* -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;*/
+	padding:4px 0px 4px 8px;
+}
+
+.detail-block{
+  min-height:18px;
+  margin-top:5px;
+}
+
+
+
+.friend-block{/*好友框框*/
+	margin:4px 15px 4px 15px;
+    float:left;
+	width:90px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+
+    zoom: 1;
+    *display: inline;
+  
+
+}
+
+
+.song-block{
+    margin:15px 15px 15px 15px;
+    float:left;
+	width:295px;
+    border:1px solid #E5E5E5;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    /*_height: 250px;*/
+
+}
+
+
+.pic-block{
+    float:left;
+	margin:5px;
+}
+
+
+
+.title-name{
+    min-width:408px;    
+}
+
+.title-style{
+    min-width:238px;
+}
+
+.title-name1{
+    min-width:408px;   
+}
+
+.title-style1{
+    min-width:238px;
+}
+
+
+/*-------------------其他-------------------*/
+
+
+
+/*指標變成手*/
+.pointer {
+	cursor:hand;
+}
+
+/*圖片去除陰影*/
+img{border:0px;}
+
+
+
+/*圓角邊框*/
+.roundedCorners {
+	/*border: 1px solid #000;*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.roundedTopCorners {/*上圓*/
+	/*border: 1px solid #000;*/
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+}
+ 
+.roundedBottomCorners {/*下圓*/
+	border: 1px solid #000;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+}
+
+
+
+
+/*連結樣式*/
+a,a:link,a:visited,a:focus,a:hover,a:active{
+  text-decoration:none;
+  color:#5F5F5F;
+  }
+
+.a a,a:link,a:visited,a:focus,a:hover,a:active{
+  text-decoration:none;
+  color:#444;
+}
+
+/* CSS Document */
+
+/*  掃頁面貼的 */
+.manubar{
+    padding:1px 0 7px 0;
+	margin-top:10px;
+	height:20px;
+	background-color:#AAA;
+	-moz-border-radius-bottomleft: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	
+}
+
+
+.link a{ text-decoration:none;}
+.link a:link{color:#FFF}
+.link a:visited{color:#FFF}
+.link a:focus{color:#FFF}
+.link a:hover{color:#FFF; 
+font-size:16px; 
+font-weight:bold;
+}
+.link a:active{color:#FFF}
+
+
+.search-style{
+   border:1px dashed #DADADA; 
+   background-color:#FFF;
+   color:#5F5F5F;
+
+}
+
+.search-style:hover,.search-style:focus{
+   background-color:#E5E5E5;
+}
+
+
+
+.info_search span {display:none;}
+.info_man span{display:none;}
+.info_door span{display:none;}
+.info_house span{display:none;}
+.info_mail span{display:none;}
+.info_index span{display:none;}
+
+.info_man:hover span { /*滑過去的時候才讓span出現*/
+top:45px;
+left:-41px;
+
+width:110px;
+background:#FDFDFD;
+color:#5f5f5f;
+padding-left:50px;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+
+z-index:1;
+}
+
+.info_house:hover span { /*滑過去的時候才讓span出現*/
+
+top:45px;
+left:-86px;
+
+width:125px;
+background:#FDFDFD;
+color:#5f5f5f;
+padding-left:35px;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+z-index:1;
+}
+
+
+
+.info_door:hover span { /*滑過去的時候才讓span出現*/
+
+top:45px;
+left:-129px;
+
+padding-left:70px;
+width:90px;
+background:#FDFDFD;
+color:#5f5f5f;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+z-index:1;
+}
+
+
+.info_mail:hover span { /*滑過去的時候才讓span出現*/
+
+top:42px;
+left:1px;
+
+padding-left:50px;
+width:110px;
+background:#FDFDFD;
+color:#5f5f5f;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+z-index:1;
+}
+
+
+.info_search:hover span { /*滑過去的時候才讓span出現*/
+
+top:-25px;
+left:5px;
+
+padding:0px 20px;
+width:110px;
+background:#FDFDFD;
+color:#5f5f5f;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+z-index:1000;
+}
+
+.info_index:hover span { /*滑過去的時候才讓span出現*/
+
+top:30px;
+left:350px;
+width:60px;
+padding-left:15px;
+background:#FDFDFD;
+color:#5f5f5f;
+border:1px solid #5f5f5f;
+
+display:block;
+position:absolute;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+z-index:1000;
+}
+
+/* 加入好友按鈕  */
+
+.outfriend{
+    margin-top:18px;
+    padding:2px;
+	width:65px;
+	background:#B4B3FF;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	z-index:1;
+}
+
+.infriend{
+    width:65px;  
+	color:#FFF; 
+	background:#B4B3FF;
+	border:1px solid #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index:1000;
+}
+
+.infriend:hover{
+    width:65px;   
+	background:#8280FF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index:1000;
+}
+
+
+.linkus a{ text-decoration:none;}
+.linkus a:link{color:#FFF}
+.linkus a:visited{color:#FFF}
+.linkus a:focus{color:#FFF}
+.linkus a:hover{color:#FFF;}
+.linkus a:active{color:#FFF}
